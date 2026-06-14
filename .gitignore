@@ -1,0 +1,23 @@
+cd "C:\Users\somas\Desktop\scraper"
+
+@"
+.venv/
+__pycache__/
+*.pyc
+
+task1/
+
+debug/
+downloads/
+OUTPUT/
+output/
+outputs/
+
+*.xlsx
+*.xls
+*.csv
+*.html
+
+.env
+.DS_Store
+"@ | Set-Content -Encoding UTF8 .gitignore

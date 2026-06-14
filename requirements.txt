@@ -1,0 +1,14 @@
+@"
+selenium
+webdriver-manager
+pandas
+openpyxl
+xlsxwriter
+requests
+beautifulsoup4
+lxml
+pillow
+numpy
+opencv-python
+pytesseract
+"@ | Set-Content -Encoding UTF8 requirements.txt
