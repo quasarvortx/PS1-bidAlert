@@ -20,4 +20,8 @@ outputs/
 
 .env
 .DS_Store
+
+!samples/
+!samples/**
+
 "@ | Set-Content -Encoding UTF8 .gitignore
