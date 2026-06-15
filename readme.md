@@ -15,9 +15,6 @@ This repository contains two working versions of the scraper:
 ```text
 scraper/
 │
-├── docs/
-│   └── readme.pdf
-│
 ├── samples/
 │   └── .gitkeep
 │
@@ -25,13 +22,11 @@ scraper/
 │   ├── eprocure_scraper.py
 │   ├── portal_adapters.py
 │   ├── run_scraper.py
-│   └── auto_merge.py
-│
+│   
 ├── version2/
 │   ├── search1.py
 │   └── auto_merge.py
 │
-├── gem_ultra1.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
@@ -49,7 +44,6 @@ scraper/
 eprocure_scraper.py   - eprocure.gov.in scraper
 portal_adapters.py    - portal adapter classes
 run_scraper.py        - main runner and Excel exporter
-auto_merge.py         - placeholder merge function
 ```
 
 ### Features
@@ -218,28 +212,6 @@ downloads/
 These files are ignored by Git using `.gitignore`.
 
 ---
-
-## Notes on eProcure Links
-
-Some eProcure document links are session-based.
-
-This means:
-
-* Detail page links usually work reliably during the same browser session.
-* Download links may require CAPTCHA once.
-* Some direct download links may expire after the session ends.
-* The safest reference to keep is the tender detail page URL and real Tender ID.
-
----
-
-## Notes on CAPTCHA
-
-This project does not bypass CAPTCHA.
-
-Where CAPTCHA appears, the user must solve it manually in the browser. Version 2 only gives OCR assistance, but manual verification is still required.
-
----
-
 
 ## Files Ignored from Git
 
